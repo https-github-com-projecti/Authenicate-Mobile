@@ -1,2 +1,0 @@
-# Authenicate-Mobile
-Authenicate-Mobile
