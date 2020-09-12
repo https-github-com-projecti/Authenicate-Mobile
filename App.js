@@ -1,29 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
+import { stylesApp } from "./StyleSheet";
+import FirstPageComponent from "./src/component/First-page-component/First-index-component";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Greeting name="Hello team! I'm react native" />
-    </View>
-  );
-}
-
-const Greeting = (props) => {
-  return (
-    <View style={styles.center}>
-      <Text>{props.name}</Text>
+    <View style={stylesApp.container}>
+      <FirstPageComponent />
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  center: {
-    alignItems: "center",
-  },
-});
+export default App;
