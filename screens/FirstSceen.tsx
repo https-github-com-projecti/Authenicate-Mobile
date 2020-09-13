@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import BottomTabNavigator from "../navigation/BottomTabNavigator";
 import { AsyncStorage } from "react-native";
-import LoginScreen from "../screens/LoginSceen";
+import RouterLogin from "../navigation/RouterLoginAndSignup";
 
 const image = {
   uri:
@@ -50,7 +50,7 @@ const FirstScreen = () => {
         </Animated.View>
       ) : (
         <View style={styles.container}>
-          {status === null ? <BottomTabNavigator /> : <LoginScreen />}
+          {status === null ? <BottomTabNavigator /> : <RouterLogin />}
         </View>
       )}
     </View>

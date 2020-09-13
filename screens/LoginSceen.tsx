@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import { View, Text } from "../components/Themed";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
@@ -32,7 +32,12 @@ const Login = () => {
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={styles.loginText}>Signup</Text>
+        <Text
+          style={styles.loginText}
+          onPress={() => navigation.navigate("CreateUser")}
+        >
+          Signup
+        </Text>
       </TouchableOpacity>
     </View>
   );
