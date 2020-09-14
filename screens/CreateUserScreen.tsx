@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 
 // @ts-ignore
 const CreateUser = ({ navigation }) => {
@@ -13,6 +19,17 @@ const CreateUser = ({ navigation }) => {
           placeholderTextColor="white"
         />
       </View>
+      <TouchableOpacity style={styles.loginBtn}>
+        <Text style={styles.loginText}>SIGNUP</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text
+          style={styles.loginText}
+          onPress={() => navigation.navigate("Login")}
+        >
+          Login
+        </Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -20,7 +37,7 @@ const CreateUser = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
+    backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -46,6 +63,19 @@ const styles = StyleSheet.create({
   forgot: {
     color: "white",
     fontSize: 11,
+  },
+  loginBtn: {
+    width: "80%",
+    backgroundColor: "#fb5b5a",
+    borderRadius: 25,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    marginBottom: 10,
+  },
+  loginText: {
+    color: "white",
   },
 });
 
