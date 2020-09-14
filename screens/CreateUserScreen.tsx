@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TextInput } from "react-native";
-import ImagesFromDirectory from "../components/ImagesFromDireactory";
 
 // @ts-ignore
 const CreateUser = ({ navigation }) => {
@@ -8,7 +7,6 @@ const CreateUser = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.logo}>Create User</Text>
       <View style={styles.inputView}>
-        <ImagesFromDirectory />
         <TextInput
           style={styles.inputText}
           placeholder="Username"
