@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import { View, Text } from "../components/Themed";
 
+// @ts-ignore
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
