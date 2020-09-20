@@ -12,7 +12,7 @@ import RouterLogin from "../navigation/RouterLoginAndSignup";
 
 const image = {
   uri:
-    "http://wfi.sytes.net:3001/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
+    "0.tcp.ap.ngrok.io:14681:3001/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
 };
 
 const FirstScreen = () => {
