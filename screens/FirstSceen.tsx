@@ -12,7 +12,7 @@ import RouterLogin from "../navigation/RouterLoginAndSignup";
 
 const image = {
   uri:
-    "0.tcp.ap.ngrok.io:14681:3001/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
+    "http://checkname.accesscam.org:8080/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
 };
 
 const FirstScreen = () => {

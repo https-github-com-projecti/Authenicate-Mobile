@@ -14,19 +14,8 @@ export const uploadImage = async (singleFile) => {
       `${singleFile.uri.split("/")[singleFile.uri.split("/").length - 1]}`
     );
     data.append("file", fileToUpload);
-    // let res = await fetch(`0.tcp.ap.ngrok.io:14681/upload/uploadProfile`, {
-    //   method: "post",
-    //   body: data,
-    //   headers: {
-    //     "Content-Type": "multipart/form-data; ",
-    //   },
-    // });
-    // let responseJson = await res.json();
-    // if (responseJson.code == 200) {
-    //   alert("Upload Successful");
-    // }
     await axios
-      .post(`0.tcp.ap.ngrok.io:14681/upload/uploadProfile`, data, {
+      .post(`${goAuthen}upload/uploadProfile`, data, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then((res) => res.json())

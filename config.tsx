@@ -1,1 +1,1 @@
-export const goAuthen = "http://192.168.43.201:3001/";
+export const goAuthen = "http://checkname.accesscam.org:8080/";
