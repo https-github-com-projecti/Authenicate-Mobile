@@ -12,7 +12,7 @@ import RouterLogin from "../navigation/RouterLoginAndSignup";
 
 const image = {
   uri:
-    "http://wfi.sytes.net:3001/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
+    "http://checkname.accesscam.org:8080/upload/assets/selective-focus-photo-of-brown-grass-1776268.jpg",
 };
 
 const FirstScreen = () => {
