@@ -6,7 +6,7 @@ export const uploadImage = async (singleFile) => {
   //Check if any file is selected or not
   if (singleFile != null) {
     //If file selected then create FormData
-    console.log(`${goAuthen}upload/uploadProfile`);
+    // console.log(`${goAuthen}upload/uploadProfile`);
     const fileToUpload = singleFile;
     const data = new FormData();
     data.append(

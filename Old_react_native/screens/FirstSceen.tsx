@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
-    fontFamily: "RobotoMono-VariableFont_wght",
+    fontFamily: "Roboto",
     color: "white",
   },
   fadingContainer: {

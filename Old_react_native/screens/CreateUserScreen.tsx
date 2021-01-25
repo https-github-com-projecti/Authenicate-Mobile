@@ -73,7 +73,7 @@ const CreateUser = ({ navigation }) => {
         uploadImage(result);
       }
     } catch (E) {
-      console.log(E);
+      // console.log(E);
     }
   };
 
